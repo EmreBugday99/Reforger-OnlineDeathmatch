@@ -1,0 +1,22 @@
+GameProject {
+ ID "OnlineDeathmatch"
+ GUID "596B535DA80C857A"
+ TITLE "Online Deathmatch"
+ Dependencies {
+  "58D0FB3206B6F859"
+ }
+ Configurations {
+  GameProjectConfig PC {
+   InputManagerSettings InputManagerSettings "{50A48858902D5F64}" {
+   }
+  }
+  GameProjectConfig XBOX_ONE {
+  }
+  GameProjectConfig XBOX_SERIES {
+  }
+  GameProjectConfig PS4 {
+  }
+  GameProjectConfig HEADLESS {
+  }
+ }
+}

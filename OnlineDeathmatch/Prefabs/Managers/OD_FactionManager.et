@@ -1,0 +1,123 @@
+FactionManager {
+ ID "596CC4C987440F64"
+ Factions {
+  Faction "{596CC4CBEC2F4C67}" {
+   FactionKey "PF"
+   FactionColor 0.318 0.561 0.071 1
+   UIInfo UIInfo "{596CC4CBE7638F43}" {
+    Name "Player Faction"
+    Description "All players belongs to this faction"
+    Icon "{88282BC355CB04B7}UI/Textures/Notifications/Notification_Player.edds"
+   }
+   "Identity of soldiers" FactionIdentity "{596CC4CBDFFBD41E}" {
+    VisualIdentityArray {
+     VisualIdentity "{596CC4CA570E36EC}" {
+      Head "{04F4D8CBA36A534B}Prefabs/Characters/Heads/Head_Black_02.et"
+      Body "{6253161EEAB88EAB}Prefabs/Characters/Basebody/CharacterBasebody_Black_02.et"
+      BodyMeshesConfig MeshConfig "{596CC4CA3A09E6F4}" {
+       SubmeshesOfBody {
+        IdentityBodyMesh "{596CC4CA0468F007}" {
+         PartType "Arm_L"
+         HealthyVersion "Basebody_Arm_L"
+         WoundVersion "Basebody_Arm_L_wound"
+        }
+        IdentityBodyMesh "{596CC4CA11E42DE8}" {
+         PartType "Arm_R"
+         HealthyVersion "Basebody_Arm_R"
+         WoundVersion "Basebody_Arm_R_wound"
+        }
+        IdentityBodyMesh "{596CC4CA12B34E2F}" {
+         PartType "ArmUpper_L"
+         HealthyVersion "Basebody_ArmUpper_L"
+         WoundVersion "Basebody_ArmUpper_L_wound"
+        }
+        IdentityBodyMesh "{596CC4CA12973F2A}" {
+         PartType "ArmUpper_R"
+         HealthyVersion "Basebody_ArmUpper_R"
+         WoundVersion "Basebody_ArmUpper_R_wound"
+        }
+        IdentityBodyMesh "{596CC4CA12FC0634}" {
+         PartType "Calf_L"
+         HealthyVersion "Basebody_Calf_L"
+         WoundVersion "Basebody_Calf_L_wound"
+        }
+        IdentityBodyMesh "{596CC4CA12E6AA84}" {
+         PartType "Calf_R"
+         HealthyVersion "Basebody_Calf_R"
+         WoundVersion "Basebody_Calf_R_wound"
+        }
+        IdentityBodyMesh "{596CC4CA12CFA5F4}" {
+         PartType "Foot_L"
+         HealthyVersion "Basebody_Foot_L"
+         WoundVersion "Basebody_Foot_L_wound"
+        }
+        IdentityBodyMesh "{596CC4CA1334CD4A}" {
+         PartType "Foot_R"
+         HealthyVersion "Basebody_Foot_R"
+         WoundVersion "Basebody_Foot_R_wound"
+        }
+        IdentityBodyMesh "{596CC4CA131DBAAC}" {
+         PartType "Groin"
+         HealthyVersion "Basebody_Groin"
+         WoundVersion "Basebody_Groin_wound"
+        }
+        IdentityBodyMesh "{596CC4CA13055D08}" {
+         PartType "Hand_L"
+         HealthyVersion "Basebody_Hand_L"
+         WoundVersion "Basebody_Hand_L_wound"
+        }
+        IdentityBodyMesh "{596CC4CA13613893}" {
+         PartType "Hand_R"
+         HealthyVersion "Basebody_Hand_R"
+         WoundVersion "Basebody_Hand_R_wound"
+        }
+        IdentityBodyMesh "{596CC4CA134F9E7B}" {
+         PartType "Leg_L"
+         HealthyVersion "Basebody_Leg_L"
+         WoundVersion "Basebody_Leg_L_wound"
+        }
+        IdentityBodyMesh "{596CC4CA13B4B6F0}" {
+         PartType "Leg_R"
+         HealthyVersion "Basebody_Leg_R"
+         WoundVersion "Basebody_Leg_R_wound"
+        }
+        IdentityBodyMesh "{596CC4CA139EAB18}" {
+         PartType "Torso"
+         HealthyVersion "Basebody_Torso"
+         WoundVersion "Basebody_Torso_wound"
+        }
+        IdentityBodyMesh "{596CC4CA138465AD}" {
+         PartType "Head"
+         HealthyVersion "Head"
+         WoundVersion "Head_wound"
+        }
+        IdentityBodyMesh "{596CC4CA13EEB74E}" {
+         PartType "CalfLower_L"
+         HealthyVersion "Basebody_CalfLower_L"
+         WoundVersion "Basebody_CalfLower_L_wound"
+        }
+        IdentityBodyMesh "{596CC4CA142C112E}" {
+         PartType "CalfLower_R"
+         HealthyVersion "Basebody_CalfLower_R"
+         WoundVersion "Basebody_CalfLower_R_wound"
+        }
+       }
+      }
+     }
+    }
+    SoundIdentityArray {
+     SoundIdentity "{596CC4CBD5AB29C2}" {
+     }
+    }
+    SocialIdentity SocialIdentity "{596CC4CBD758F704}" {
+     NamesConfig {
+      "John"
+     }
+     SurnamesConfig {
+      "Doe"
+     }
+    }
+   }
+  }
+ }
+}

@@ -1,0 +1,10 @@
+SCR_LoadoutManager {
+ ID "596CC4CF7B1D9FF7"
+ m_aPlayerLoadouts {
+  SCR_FactionPlayerLoadout "{596CC4C88DB53CA3}" {
+   m_sLoadoutName "PlayerLoadout"
+   m_sLoadoutResource "{8D89B17BCFBFAE45}Prefabs/Characters/OD_US.et"
+   m_sAffiliatedFaction "PF"
+  }
+ }
+}

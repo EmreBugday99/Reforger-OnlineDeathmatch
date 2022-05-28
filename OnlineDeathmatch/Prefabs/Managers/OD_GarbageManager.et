@@ -1,0 +1,10 @@
+GarbageManager {
+ ID "596D6766CFD091F3"
+ components {
+  RplComponent "{596D6766F5CF84C6}" {
+   "Rpl State Override" Static
+   Streamable Disabled
+  }
+ }
+ coords 318.574 2.001 280.695
+}

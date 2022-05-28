@@ -1,0 +1,177 @@
+SCR_AIWorld AIWorld {
+ components {
+  NavmeshWorldComponent "{596CEC82E69F2E12}" {
+   WorldSettings NavmeshWorldParams "{596CEC82E69F2FB7}" {
+    TileSize 51
+   }
+   NavmeshSettings NavmeshWorld "{596CEC82E69F2E62}" {
+    NavmeshFile "{058CAD8A83280A0F}Worlds/ShooterWorld01/ShooterWorld01.nmn"
+    RecastConfig NavmeshRecastConfig "{596CEC82E69F2E7C}" {
+     CellHeight 0.1
+     WalkableSlopeAngle 50
+     WalkableHeight 1.8
+     MaxSimplificationError 1.8
+    }
+    UsePathSmoothing 0
+    NavmeshProject "Soldiers"
+    AbsoluteAreas {
+     "Water"
+    }
+   }
+   ServerConfig NavmeshGeneratorServer "{596CEC82E69F2E6E}" {
+    ServerPort 1376
+   }
+  }
+  SCR_AISettingsComponent "{596CEC82E69F2ED6}" {
+   Enabled 1
+  }
+ }
+ Formations {
+  AIFormationDefinition "{596CEC82E69F2EF4}" {
+   Name "Line"
+   Offsets {
+    0 0 0 3 0 0 -3 0 0 6 0 0 -6 0 0 9 0 0 -9 0 0 12 0 0 -12 0 0 15 0 0 -15 0 0
+   }
+  }
+  AIFormationDefinition "{596CEC82E69F2EE5}" {
+   Name "StaggeredColumn"
+   Offsets {
+    0 0 0 3 0 -3 0 0 -6 3 0 -9 0 0 -12 3 0 -15 0 0 -18 3 0 -21 0 0 -24 3 0 -27 0 0 -30
+   }
+  }
+  AIFormationDefinition "{596CEC82E69F2E91}" {
+   Name "Wedge"
+   Offsets {
+    0 0 0 3 0 -3 -3 0 -3 6 0 -6 -6 0 -6 9 0 -9 -9 0 -9 12 0 -12 -12 0 -12 15 0 -15 -15 0 -15
+   }
+  }
+  AIFormationDefinition "{596CEC82E69F2E80}" {
+   Name "Column"
+   Offsets {
+    0 0 0 0 0 -3 0 0 -6 0 0 -9 0 0 -12 0 0 -15 0 0 -18 0 0 -21 0 0 -24 0 0 -27 0 0 -30
+   }
+  }
+ }
+ "Initialize Road Network" 0
+ m_aGoalMessages {
+  SCR_AIMessage_Attack "{596CEC82E69F2EB4}" {
+   m_eUIType ATTACK
+  }
+  SCR_AIMessage_CoverAdvance "{596CEC82E69F2EA3}" {
+   m_eUIType COVER_ADVANCE
+  }
+  SCR_AIMessage_Flee "{596CEC82E69F2EAA}" {
+   m_eUIType FLEE
+  }
+  SCR_AIMessage_GetIn "{596CEC82E69F2D57}" {
+   m_eUIType GET_IN_VEHICLE
+  }
+  SCR_AIMessage_GetOut "{596CEC82E69F2D42}" {
+   m_eUIType GET_OUT_VEHICLE
+  }
+  SCR_AIMessage_GroupAttack "{596CEC82E69F2D48}" {
+   m_eUIType GROUP_ATTACK
+  }
+  SCR_AIMessage_GroupAttackDone "{596CEC82E69F2D70}" {
+   m_eUIType GROUP_ATTACK_DONE
+  }
+  SCR_AIMessage_Heal "{596CEC82E69F2D7D}" {
+   m_eUIType HEAL
+  }
+  SCR_AIMessage_HealWait "{596CEC82E69F2D66}" {
+   m_eUIType HEAL_WAIT
+  }
+  SCR_AIMessage_KeepFormation "{596CEC82E69F2D13}" {
+   m_eUIType MOVE_IN_FORMATION
+  }
+  SCR_AIMessage_Move "{596CEC82E69F2D1A}" {
+   m_eUIType MOVE
+  }
+  SCR_AIMessage_SeekAndDestroy "{596CEC82E69F2D00}" {
+   m_eUIType SEEK_DESTROY
+  }
+  SCR_AIMessage_Defend "{596CEC82E69F2D0D}" {
+   m_eUIType DEFEND
+  }
+  SCR_AIMessage_Cancel "{596CEC82E69F2D3B}" {
+   m_eUIType CANCEL
+  }
+  SCR_AIMessage_PerformAction "{596CEC82E69F2D3D}" {
+   m_eUIType PERFORM_ACTION
+  }
+  SCR_AIMessage_Resupply "{596CEC82E69F2D25}" {
+   m_eUIType RESUPPLY
+  }
+  SCR_AIMessage_AttackStatic "{596CEC82E69F2D2E}" {
+   m_eUIType ATTACK_STATIC
+  }
+  SCR_AIMessage_AttackStaticDone "{596CEC82E69F2DD6}" {
+   m_eUIType ATTACK_STATIC_DONE
+  }
+  SCR_AIMessage_Follow "{596CEC82E69F2DDF}" {
+   m_eUIType FOLLOW
+  }
+  SCR_AIMessage_Investigate "{596CEC82E69F2DC9}" {
+   m_eUIType INVESTIGATE
+  }
+  SCR_AIMessage_Retreat "{596CEC82E69F2DF3}" {
+   m_eUIType RETREAT
+  }
+ }
+ m_aInfoMessages {
+  SCR_AIMessage_Contact "{596CEC82E69F2DFE}" {
+   m_eUIType CONTACT
+  }
+  SCR_AIMessage_FoundCorpse "{596CEC82E69F2DEB}" {
+   m_eUIType FOUND_CORPSE
+  }
+  SCR_AIMessage_NoAmmo "{596CEC82E69F2DED}" {
+   m_eUIType NO_AMMO
+  }
+  SCR_AIMessage_SitRep "{596CEC82E69F2D97}" {
+   m_eUIType SIT_REP
+  }
+  SCR_AIMessage_TargetEliminated "{596CEC82E69F2D9D}" {
+   m_eUIType TARGET_ELIMINATED
+  }
+  SCR_AIMessage_TargetLost "{596CEC82E69F2D87}" {
+   m_eUIType TARGET_LOST
+  }
+  SCR_AIMessage_UnderFire "{596CEC82E69F2D8F}" {
+   m_eUIType UNDER_FIRE
+  }
+  SCR_AIMessage_Wounded "{596CEC82E69F2DB2}" {
+   m_eUIType WOUNDED
+  }
+ }
+ m_aOrders {
+  SCR_AIOrder_AIState "{596CEC82E69F2DBC}" {
+   m_eUIType AI_STATE
+  }
+  SCR_AIOrder_CombatType "{596CEC82E69F2DA6}" {
+   m_eUIType COMBAT_TYPE
+  }
+  SCR_AIOrder_MovementType "{596CEC82E69F2C50}" {
+   m_eUIType MOVEMENT_TYPE
+  }
+  SCR_AIOrder_ReturnToDefault "{596CEC82E69F2C5A}" {
+   m_eUIType BACK_TO_DEFAULT
+  }
+  SCR_AIOrder_Stance "{596CEC82E69F2C4E}" {
+   m_eUIType STANCE
+  }
+  SCR_AIOrder_Unit_State "{596CEC82E69F2C75}" {
+   m_eUIType UNIT_STATE
+  }
+  SCR_AIOrder_WeaponRaised "{596CEC82E69F2C7E}" {
+   m_eUIType WEAPON_RAISED
+  }
+  SCR_AIOrder_WeaponType "{596CEC82E69F2C62}" {
+   m_eUIType WEAPON_TYPE
+  }
+ }
+}
+PerceptionManager PerceptionManager {
+ coords 96.632 0.001 228.212
+ LineOfSightLayer 67108864
+}

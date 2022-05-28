@@ -1,0 +1,12 @@
+SCR_SpawnPoint {
+ ID "596CDA37D14EA195"
+ components {
+  RplComponent "{596CD577BA0C91ED}" {
+  }
+ }
+ coords 244.271 1.043 247.551
+ m_fSpawnRadius 10
+ m_fNoPlayerRadius 0
+ m_fNoSightRadius 0
+ m_sFaction "PF"
+}

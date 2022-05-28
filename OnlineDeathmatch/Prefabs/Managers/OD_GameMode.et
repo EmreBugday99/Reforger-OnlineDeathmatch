@@ -1,0 +1,17 @@
+SCR_BaseGameMode {
+ ID "596CC4C982141DF9"
+ components {
+  OD_GameModeComponent "{596CC4CB56466BD4}" {
+   playerFactionName "Player Faction"
+   playerFactionKey "PF"
+  }
+  SCR_HintManagerComponent "{596CC4CB4F1D0DB9}" {
+  }
+  SCR_RespawnHandlerComponent "{596CBA9FAEC729F8}" {
+  }
+  SCR_RespawnSystemComponent "{596CBA9F1681C319}" {
+  }
+  RplComponent "{596CBA9F1E59871C}" {
+  }
+ }
+}

@@ -1,0 +1,310 @@
+$grp GenericEntity : "{17268A1479D32278}PrefabLibrary/Infrastructure/Lamps/LampStreet_E_03_addon.et" {
+ {
+  coords 339.923 2.68 263.758
+  angleY -7.402
+ }
+ {
+  coords 339.248 2.68 285.143
+  angleY -177.593
+ }
+ {
+  coords 339.692 2.68 285.235
+  angleY -0.262
+ }
+ {
+  coords 260.979 2.737 284.692
+  angleY 80.911
+ }
+ {
+  coords 262.541 2.722 281.007
+  angleY 179.108
+ }
+ {
+  coords 263.157 2.722 259.667
+  angleY -1.167
+ }
+ {
+  coords 272.855 16.906 240.059
+  angleY -1.167
+ }
+ {
+  coords 342.131 16.913 314.942
+  angleY -91.186
+ }
+}
+$grp GenericEntity : "{22B854D73D6D5976}PrefabsEditable/Auto/Structures/Infrastructure/Lamps/LampStreet_E_02/E_LampStreet_E_02_doubleStraight.et" {
+ {
+  coords 280.667 0.001 275.688
+ }
+ {
+  coords 323.73 0.001 276.556
+ }
+ {
+  coords 301.844 -0.1 250.629
+  angleY 88.996
+ }
+ {
+  coords 300.995 -0.259 299.076
+  angleY 88.996
+ }
+}
+SCR_DestructibleBuildingEntity : "{26D21E6AD994B0D2}Prefabs/Structures/Military/Houses/GarageMilitary_E_01_V1.et" {
+ coords 303.489 0.001 318.986
+ angleY 175.758
+}
+SCR_DestructibleBuildingEntity : "{4A862A8A65503FFC}Prefabs/Structures/Military/Houses/GarageMilitary_E_01_V2.et" {
+ coords 301.774 0.001 232.944
+ angleY -0.596
+}
+$grp SCR_DestructibleBuildingEntity : "{5F97E54397247954}Prefabs/Structures/Military/Houses/Barracks_01_military_base.et" {
+ {
+  coords 262.766 0.001 275.511
+  angleY -1.441
+ }
+ {
+  coords 339.324 0.001 279.629
+  angleY -1.441
+ }
+}
+SCR_DestructibleBuildingEntity : "{7216C531E1684145}Prefabs/Structures/Military/Houses/GuardHouse_03_beige.et" {
+ coords 301.007 0.001 276.158
+ angleY -0.457
+}
+$grp StaticModelEntity : "{8CAE228D5D44DD5F}Prefabs/Structures/Military/Fortifications/Trenches/TrenchOld_01_6m_metal.et" {
+ {
+  coords 282.595 0.001 292.588
+  angleY -2.61
+ }
+ {
+  coords 288.973 0.001 292.879
+  angleY -2.61
+ }
+ {
+  coords 295.221 0.001 293.164
+  angleY -2.61
+ }
+ {
+  coords 300.348 0.001 293.398
+  angleY -2.61
+ }
+ {
+  coords 306.449 0.001 293.676
+  angleY -2.61
+ }
+ {
+  coords 311.576 0.001 293.91
+  angleY -2.61
+ }
+ {
+  coords 317.93 0.001 294.199
+  angleY -2.61
+ }
+ {
+  coords 323.057 0.001 294.433
+  angleY -2.61
+ }
+ {
+  coords 284.277 0.001 255.7
+  angleY -2.61
+ }
+ {
+  coords 290.655 0.001 255.991
+  angleY -2.61
+ }
+ {
+  coords 296.903 0.001 256.276
+  angleY -2.61
+ }
+ {
+  coords 302.03 0.001 256.51
+  angleY -2.61
+ }
+ {
+  coords 308.131 0.001 256.788
+  angleY -2.61
+ }
+ {
+  coords 313.258 0.001 257.022
+  angleY -2.61
+ }
+ {
+  coords 319.612 0.001 257.311
+  angleY -2.61
+ }
+ {
+  coords 324.739 0.001 257.545
+  angleY -2.61
+ }
+}
+$grp SCR_DestructibleBuildingEntity : "{92F8DAE5E56CA22E}Prefabs/Structures/Cultural/Castles/Castle_01_OuterWall_01.et" {
+ {
+  coords 337.155 6.149 200.601
+ }
+ {
+  coords 316.104 6.149 200.601
+ }
+ {
+  coords 295.078 6.149 200.601
+ }
+ {
+  coords 274.045 6.149 200.601
+ }
+ {
+  coords 253.044 6.149 200.601
+ }
+ {
+  coords 232.02 6.149 200.601
+ }
+ {
+  coords 232.02 6.149 224.454
+  angleY 90
+ }
+ {
+  coords 232.02 6.149 245.475
+  angleY 90
+ }
+ {
+  coords 232.02 6.149 266.511
+  angleY 90
+ }
+ {
+  coords 232.02 6.149 287.55
+  angleY 90
+ }
+ {
+  coords 232.02 6.149 308.592
+  angleY 90
+ }
+ {
+  coords 232.02 6.149 329.6
+  angleY 90
+ }
+ {
+  coords 232.02 6.149 350.653
+  angleY 90
+ }
+ {
+  coords 358.183 6.149 200.601
+ }
+ {
+  coords 358.183 6.149 349.519
+ }
+ {
+  coords 337.155 6.149 349.519
+ }
+ {
+  coords 316.104 6.149 349.519
+ }
+ {
+  coords 295.078 6.149 349.519
+ }
+ {
+  coords 274.045 6.149 349.519
+ }
+ {
+  coords 232.02 6.149 349.519
+ }
+ {
+  coords 253.044 6.149 349.519
+ }
+ {
+  coords 376.757 6.149 224.454
+  angleY 90
+ }
+ {
+  coords 376.757 6.149 245.475
+  angleY 90
+ }
+ {
+  coords 376.757 6.149 266.511
+  angleY 90
+ }
+ {
+  coords 376.757 6.149 287.55
+  angleY 90
+ }
+ {
+  coords 376.757 6.149 308.592
+  angleY 90
+ }
+ {
+  coords 376.757 6.149 329.6
+  angleY 90
+ }
+ {
+  coords 376.757 6.149 350.653
+  angleY 90
+ }
+}
+$grp SCR_DestructibleBuildingEntity : "{9CEC8BB63429FF28}Prefabs/Structures/Airport/ControlTower_01.et" {
+ {
+  coords 347.182 2.852 307.966
+  angleY -92.479
+ }
+ {
+  coords 265.534 2.852 235.349
+  angleY 0.874
+ }
+}
+$grp GenericEntity : "{A98050A098B0F5D5}PrefabsEditable/Auto/Structures/Infrastructure/Lamps/LampStreet_E_01/E_LampStreet_E_01_4m.et" {
+ {
+  coords 350.655 0.001 276.261
+ }
+ {
+  coords 350.655 0.001 266.252
+ }
+ {
+  coords 350.655 0.001 289.009
+ }
+ {
+  coords 252.068 0.001 273.199
+ }
+ {
+  coords 252.068 0.001 285.947
+ }
+ {
+  coords 252.068 0.001 263.19
+ }
+ {
+  coords 297.064 0.659 325.245
+ }
+ {
+  coords 281.842 0.659 324.098
+ }
+ {
+  coords 310.963 0.659 325.245
+ }
+ {
+  coords 318.72 0.659 325.245
+ }
+ {
+  coords 312.244 0.659 227.569
+ }
+ {
+  coords 327.854 0.659 227.569
+ }
+ {
+  coords 297.946 0.659 227.569
+ }
+ {
+  coords 285.39 0.659 227.569
+ }
+}
+$grp StaticModelEntity : "{DBCDEC45DB834E8A}Prefabs/Structures/Infrastructure/Towers/TransmitterTower_01.et" {
+ {
+  coords 344.332 2.001 237.101
+ }
+ {
+  coords 258.562 2.001 311.855
+ }
+}
+$grp SCR_DestructibleBuildingEntity : "{FBCE1861B987EA68}Prefabs/Structures/Military/Houses/GuardTower_01.et" {
+ {
+  coords 353.966 0.001 276.533
+  angleY -90.357
+ }
+ {
+  coords 247.777 0.001 275.871
+  angleY 85.138
+ }
+}

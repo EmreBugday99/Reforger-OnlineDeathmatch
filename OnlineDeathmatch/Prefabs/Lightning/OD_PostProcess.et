@@ -1,0 +1,51 @@
+GenericWorldPPEffect {
+ ID "596CBA98E9C36B83"
+ Priority 0
+ Profile 4
+ {
+  $grp GenericWorldPPEffect {
+   SSDO {
+    ID "596CBA98E9C37781"
+    Priority 14
+    Profile 3
+   }
+   UnderWater {
+    ID "596CBA98E9C37782"
+    Priority 3
+    Profile 5
+   }
+   GodRays {
+    ID "596CBA98E9C37783"
+    Priority 2
+    Profile 1
+   }
+   HDR {
+    ID "596CBA98E9C38556"
+    Priority 16
+    Profile 2
+   }
+   HBAO {
+    ID "596CBA98E9C38557"
+    Priority 15
+    Profile 0
+   }
+   HeightmapAO {
+    ID "596CBA98E9C3CEBB"
+    coords 0 0 0
+    Priority 1
+    Material "{A71F44A2FFA0FEA7}Common/Postprocess/HeightmapAO.emat"
+   }
+   PPAA {
+    ID "596CBA98E9C3CEBC"
+    Priority 17
+    Profile 6
+   }
+   Rain {
+    ID "596CBA98E9C3F1E1"
+    coords 0 0 0.06
+    Priority 4
+    Profile 7
+   }
+  }
+ }
+}

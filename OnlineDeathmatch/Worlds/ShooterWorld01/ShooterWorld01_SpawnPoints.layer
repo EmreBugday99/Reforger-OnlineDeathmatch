@@ -1,0 +1,83 @@
+$grp SCR_SpawnPoint : "{1E608666DA978AB1}Prefabs/SpawnPoints/Player_SpawnPoint.et" {
+ Player_SpawnPoint1 {
+  coords 319.748 3.522 322.177
+  angleY 177.502
+  m_fSpawnRadius 0
+ }
+ Player_SpawnPoint2 {
+  coords 287.009 3.522 319.496
+  angleY 177.502
+  m_fSpawnRadius 0
+ }
+ Player_SpawnPoint3 {
+  coords 342.727 3.139 281.655
+  angleY -92.996
+  m_fSpawnRadius 0
+ }
+ Player_SpawnPoint4 {
+  coords 335.946 3.139 281.3
+  angleY 84.511
+  m_fSpawnRadius 0
+ }
+ Player_SpawnPoint5 {
+  coords 309.813 3.139 228.911
+  angleY 84.511
+  m_fSpawnRadius 0
+ }
+ Player_SpawnPoint6 {
+  coords 284.929 3.139 229.163
+  angleY 84.511
+  m_fSpawnRadius 0
+ }
+ Player_SpawnPoint7 {
+  coords 265.74 3.139 277.627
+  angleY -88.167
+  m_fSpawnRadius 0
+ }
+ Player_SpawnPoint8 {
+  coords 259.361 3.139 277.957
+  angleY 97.905
+  m_fSpawnRadius 0
+ }
+}
+$grp SCR_SpawnPoint : "{F2A99BF6981EAF93}Prefabs/SpawnPoints/Enemy_SpawnPoint.et" {
+ Enemy_SpawnPoint1 {
+  components {
+   OD_EnemySpawner "{596CDA3731C49989}" {
+    enemyRespawnMilliseconds 10000
+    enemyCount 1
+   }
+  }
+  coords 298.718 3.242 284.767
+ }
+ Enemy_SpawnPoint2 {
+  components {
+   OD_EnemySpawner "{596CDA3731C49989}" {
+    enemyRespawnMilliseconds 10000
+    enemyCount 1
+   }
+  }
+  coords 298.718 3.242 264.652
+  angleY 180
+ }
+ Enemy_SpawnPoint3 {
+  components {
+   OD_EnemySpawner "{596CDA3731C49989}" {
+    enemyRespawnMilliseconds 10000
+    enemyCount 1
+   }
+  }
+  coords 287.33 3.242 275.441
+  angleY -90.337
+ }
+ Enemy_SpawnPoint4 {
+  components {
+   OD_EnemySpawner "{596CDA3731C49989}" {
+    enemyRespawnMilliseconds 10000
+    enemyCount 1
+   }
+  }
+  coords 318.219 3.242 274.593
+  angleY 89.698
+ }
+}

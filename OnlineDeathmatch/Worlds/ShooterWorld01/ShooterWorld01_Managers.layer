@@ -1,0 +1,184 @@
+RadioManagerEntity RadioManager {
+ components {
+  RplComponent "{596D67674D091D46}" {
+  }
+ }
+}
+SCR_CameraManager CameraManager {
+}
+ScriptedChatEntity ChatManager {
+ components {
+  RplComponent "{596D67669AFB75A0}" {
+  }
+ }
+ "Base style" BaseChatChannelStyle "{596CDA3A531CE8CF}" {
+ }
+ Channels {
+  ServerChatChannel "{596CDA3A3FA7604D}" {
+   "Channel name" "Server"
+   Style BaseChatChannelStyle "{596CDA3A327196CD}" {
+   }
+  }
+  BaseChatChannel "{596D6766BBC46A80}" {
+   "Channel name" "Chat"
+   Style BaseChatChannelStyle "{596D67668873FC9D}" {
+   }
+  }
+  FactionChatChannel "{596D6766B0C1CC3B}" {
+   "Channel name" "Faction"
+   Style BaseChatChannelStyle "{596D6766B61DA9A0}" {
+   }
+  }
+ }
+ "Whisper channel" PrivateMessageChannel "{596CDA3A53C8C793}" {
+  "Channel name" "private"
+  Style BaseChatChannelStyle "{596CDA3A56D02966}" {
+  }
+ }
+ "Default channel" "Faction"
+}
+TimeAndWeatherManagerEntity WeatherManager : "{0CA60CD8544F2C2B}Prefabs/Managers/OD_WeatherManager.et" {
+ "Initial Day Time" 8
+ "Internal variant transition" 0
+ "Internal subvariant 0" 0
+ "Internal subvariant 1" 0
+}
+SCR_BaseGameMode GameMode : "{297A30B6CEAD037D}Prefabs/Managers/OD_GameMode.et" {
+}
+FactionManager FactionManager : "{F8931B0B71A27471}Prefabs/Managers/OD_FactionManager.et" {
+ Factions {
+  Faction "{596CDA37FA40B3C2}" {
+   FactionKey "EF"
+   FactionColor 0.502 0 0 1
+   UIInfo UIInfo "{596CDA37F36B20A2}" {
+    Name "Enemy Faction"
+    Description "AI/Enemy Faction"
+   }
+   "Identity of soldiers" FactionIdentity "{596CDA37BEA79B69}" {
+    VisualIdentityArray {
+     VisualIdentity "{596CDA36292B651C}" {
+      Head "{24D28E910BF9F648}Prefabs/Characters/Heads/Head_Asian_02.et"
+      Body "{32B5FE236D152368}Prefabs/Characters/Basebody/CharacterBasebody_Asian_02.et"
+      BodyMeshesConfig MeshConfig "{596CDA363FFD1D9A}" {
+       SubmeshesOfBody {
+        IdentityBodyMesh "{596CDA36E403A28F}" {
+         PartType "Arm_L"
+         HealthyVersion "Basebody_Arm_L"
+         WoundVersion "Basebody_Arm_L_wound"
+        }
+        IdentityBodyMesh "{596CDA36E4FEC574}" {
+         PartType "Arm_R"
+         HealthyVersion "Basebody_Arm_R"
+         WoundVersion "Basebody_Arm_R_wound"
+        }
+        IdentityBodyMesh "{596CDA36E4E08343}" {
+         PartType "ArmUpper_L"
+         HealthyVersion "Basebody_ArmUpper_L"
+         WoundVersion "Basebody_ArmUpper_L_wound"
+        }
+        IdentityBodyMesh "{596CDA36E4C80E2C}" {
+         PartType "ArmUpper_R"
+         HealthyVersion "Basebody_ArmUpper_R"
+         WoundVersion "Basebody_ArmUpper_R_wound"
+        }
+        IdentityBodyMesh "{596CDA36E5301D8A}" {
+         PartType "Calf_L"
+         HealthyVersion "Basebody_Calf_L"
+         WoundVersion "Basebody_Calf_L_wound"
+        }
+        IdentityBodyMesh "{596CDA36E51B5937}" {
+         PartType "Calf_R"
+         HealthyVersion "Basebody_Calf_R"
+         WoundVersion "Basebody_Calf_R_wound"
+        }
+        IdentityBodyMesh "{596CDA36E5036F62}" {
+         PartType "Foot_L"
+         HealthyVersion "Basebody_Foot_L"
+         WoundVersion "Basebody_Foot_L_wound"
+        }
+        IdentityBodyMesh "{596CDA36E575C957}" {
+         PartType "Foot_R"
+         HealthyVersion "Basebody_Foot_R"
+         WoundVersion "Basebody_Foot_R_wound"
+        }
+        IdentityBodyMesh "{596CDA36E55D2538}" {
+         PartType "Groin"
+         HealthyVersion "Basebody_Groin"
+         WoundVersion "Basebody_Groin_wound"
+        }
+        IdentityBodyMesh "{596CDA36E5454080}" {
+         PartType "Hand_L"
+         HealthyVersion "Basebody_Hand_L"
+         WoundVersion "Basebody_Hand_L_wound"
+        }
+        IdentityBodyMesh "{596CDA36E5AFF71D}" {
+         PartType "Hand_R"
+         HealthyVersion "Basebody_Hand_R"
+         WoundVersion "Basebody_Hand_R_wound"
+        }
+        IdentityBodyMesh "{596CDA36E595F977}" {
+         PartType "Leg_L"
+         HealthyVersion "Basebody_Leg_L"
+         WoundVersion "Basebody_Leg_L_wound"
+        }
+        IdentityBodyMesh "{596CDA36E5F06554}" {
+         PartType "Leg_R"
+         HealthyVersion "Basebody_Leg_R"
+         WoundVersion "Basebody_Leg_R_wound"
+        }
+        IdentityBodyMesh "{596CDA36E5DBAAF1}" {
+         PartType "Torso"
+         HealthyVersion "Basebody_Torso"
+         WoundVersion "Basebody_Torso_wound"
+        }
+        IdentityBodyMesh "{596CDA36E5C7797F}" {
+         PartType "Head"
+         HealthyVersion "Head"
+         WoundVersion "Head_wound"
+        }
+        IdentityBodyMesh "{596CDA36E629B3EC}" {
+         PartType "CalfLower_L"
+         HealthyVersion "Basebody_CalfLower_L"
+         WoundVersion "Basebody_CalfLower_L_wound"
+        }
+        IdentityBodyMesh "{596CDA36E674A472}" {
+         PartType "CalfLower_R"
+         HealthyVersion "Basebody_CalfLower_R"
+         WoundVersion "Basebody_CalfLower_R_wound"
+        }
+       }
+      }
+     }
+    }
+    SoundIdentityArray {
+     SoundIdentity "{596CDA35268A2B29}" {
+      VoiceID 100
+     }
+    }
+    SocialIdentity SocialIdentity "{596CDA353A80579F}" {
+     NamesConfig {
+      "Vladimir" "Andrey" "Anatoly"
+     }
+     SurnamesConfig {
+      "Smirnoff" "Popov" "Petrov"
+     }
+    }
+   }
+  }
+ }
+}
+SCR_LoadoutManager LoadoutManager : "{B360CDACD8603BE5}Prefabs/Managers/OD_LoadoutManager.et" {
+ m_aPlayerLoadouts {
+  SCR_FactionPlayerLoadout "{596CC4C88DB53CA3}" {
+   m_sLoadoutResource "{BDA5514C000508C4}Prefabs/Characters/OD_US.et"
+  }
+  SCR_FactionPlayerLoadout "{596CDA358A287D18}" {
+   m_sLoadoutName "EnemyLoadout"
+   m_sLoadoutResource "{83CFA797EDC7AF9A}Prefabs/Characters/OD_USSR.et"
+   m_sAffiliatedFaction "EF"
+  }
+ }
+}
+GarbageManager GarbageManager : "{C1B34C9B85948DB4}Prefabs/Managers/OD_GarbageManager.et" {
+ coords 0 0 0
+}

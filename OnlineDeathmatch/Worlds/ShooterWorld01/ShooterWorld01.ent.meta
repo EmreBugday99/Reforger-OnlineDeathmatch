@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{FE7D00CD31CAB512}Worlds/ShooterWorld01/ShooterWorld01.ent"
+ Configurations {
+  ENTResourceClass PC {
+  }
+  ENTResourceClass XBOX_ONE : PC {
+  }
+  ENTResourceClass XBOX_SERIES : PC {
+  }
+  ENTResourceClass PS4 : PC {
+  }
+  ENTResourceClass HEADLESS : PC {
+  }
+ }
+}

@@ -1,0 +1,17 @@
+SCR_SpawnPoint {
+ ID "596D08F8B7D38005"
+ components {
+  OD_EnemySpawner "{596CDA3731C49989}" {
+   enemyFactionKey "EF"
+   enemyRespawnMilliseconds 5000
+   enemyCount 3
+  }
+  RplComponent "{596CD577BA0C91ED}" {
+  }
+ }
+ coords 298.55 2.902 286.685
+ m_fSpawnRadius 10
+ m_fNoPlayerRadius 0
+ m_fNoSightRadius 0
+ m_sFaction "EF"
+}

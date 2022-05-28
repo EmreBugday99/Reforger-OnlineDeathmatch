@@ -1,0 +1,15 @@
+Layer default {
+ Index 0
+}
+Layer Managers {
+ Index 1
+}
+Layer SpawnPoints {
+ Index 2
+}
+Layer AI {
+ Index 3
+}
+Layer LevelDesign {
+ Index 4
+}
