@@ -1,0 +1,189 @@
+FrameWidgetClass {
+ Name "rootFrame"
+ "Ignore Cursor" 0
+ {
+  PanelWidgetClass "{5972D662F9D506C1}" {
+   Name "ShopPanel"
+   Slot FrameWidgetSlot "{5972D662F9D506EF}" {
+    Anchor 0.5 0.5 0.5 0.5
+    PositionX -150
+    OffsetLeft -150
+    PositionY 0
+    OffsetTop 0
+    SizeX 242.052
+    OffsetRight -92.052
+    SizeY 133.58
+    OffsetBottom -133.58
+    SizeToContent 1
+   }
+   {
+    ImageWidgetClass "{5972D66297742BB8}" {
+     Name "Background"
+     Slot FrameWidgetSlot "{5972D66297742A40}" {
+      Anchor 0.5 0.5 0.5 0.5
+      PositionX -335.409
+      OffsetLeft -335.409
+      PositionY -100.353
+      OffsetTop -100.353
+      SizeX 668.779
+      OffsetRight -333.37
+      SizeY 200.681
+      OffsetBottom -100.328
+     }
+     Color 0 0.023 0.078 0.784
+    }
+    VerticalLayoutWidgetClass "{596EA9A4813A2AE5}" {
+     Name "Vertical"
+     Slot FrameWidgetSlot "{596EA9A4813A2A8B}" {
+      PositionX 0
+      OffsetLeft 0
+      PositionY 0
+      OffsetTop 0
+      SizeX 170.75
+      OffsetRight -170.8
+      SizeY 70
+      OffsetBottom -70
+      SizeToContent 1
+     }
+     {
+      HorizontalLayoutWidgetClass "{596EA9A037D26FDE}" {
+       Name "Horizontal"
+       Slot LayoutSlot "{596EA9A491B8530D}" {
+       }
+       "Fill Origin" Center
+       {
+        VerticalLayoutWidgetClass "{596EA9A0F5CBCBBA}" {
+         Name "Vertical_Heal"
+         Slot LayoutSlot "{596EA9A0F5CBCA4A}" {
+          Padding 20 0 20 0
+         }
+         {
+          RichTextWidgetClass "{596EA9A0C41D4797}" {
+           Name "Text_Heal"
+           Slot LayoutSlot "{596EA9A0C41D47BD}" {
+            Padding 0 0 0 5
+           }
+           Text "Heal"
+           "Font Size" 40
+           Offset 0 0
+          }
+          RichTextWidgetClass "{596EA9A402A3CD22}" {
+           Name "Text_Price_Heal"
+           Slot LayoutSlot "{596EA9A0C41D47BD}" {
+            HorizontalAlign 1
+            Padding 0 0 0 5
+           }
+           Color 0.497 1 0 1
+           Text "000"
+           "Font Size" 30
+           Offset 0 0
+          }
+          ButtonWidgetClass "{596EA9A0C643469B}" {
+           Name "Button_Heal"
+           Slot LayoutSlot "{596EA9A0C64346A0}" {
+            HorizontalAlign 1
+            VerticalAlign 1
+            Padding 0 0 0 10
+           }
+           components {
+            ButtonActionComponent "{596F7A513F5F080D}" {
+            }
+           }
+           {
+            RichTextWidgetClass "{596EA9A08F312636}" {
+             Name "ButtonText_Heal"
+             Slot ButtonWidgetSlot "{596EA9A08F3126C4}" {
+              Padding 0 0 0 0
+             }
+             Color 0 0.254 0.068 1
+             Text "Buy"
+             "Font Size" 40
+             "Min Font Size" 10
+            }
+           }
+          }
+         }
+        }
+        VerticalLayoutWidgetClass "{597F74129088F6FA}" {
+         Name "Vertical_WeaponPack"
+         Slot LayoutSlot "{596EA9A0F5CBCA4A}" {
+          Padding 20 0 20 0
+         }
+         {
+          RichTextWidgetClass "{597F74129088F6F9}" {
+           Name "Text_WeaponPack"
+           Slot LayoutSlot "{596EA9A0C41D47BD}" {
+            Padding 0 0 0 5
+           }
+           Text "Weapon Pack"
+           "Font Size" 40
+           Offset 0 0
+          }
+          RichTextWidgetClass "{597F74129088F6FF}" {
+           Name "Text_Price_WeaponPack"
+           Slot LayoutSlot "{596EA9A0C41D47BD}" {
+            HorizontalAlign 1
+            Padding 0 0 0 5
+           }
+           Color 0.497 1 0 1
+           Text "000"
+           "Font Size" 30
+           Offset 0 0
+          }
+          ButtonWidgetClass "{597F74129088F6FE}" {
+           Name "Button_WeaponPack"
+           Slot LayoutSlot "{596EA9A0C64346A0}" {
+            HorizontalAlign 1
+            VerticalAlign 1
+            Padding 0 0 0 10
+           }
+           components {
+            ButtonActionComponent "{596F7A513F5F080D}" {
+            }
+           }
+           {
+            RichTextWidgetClass "{597F74129088E57A}" {
+             Name "ButtonText_Heal"
+             Slot ButtonWidgetSlot "{596EA9A08F3126C4}" {
+              Padding 0 0 0 0
+             }
+             Color 0 0.254 0.068 1
+             Text "Buy"
+             "Font Size" 40
+             "Min Font Size" 10
+            }
+           }
+          }
+         }
+        }
+        ButtonWidgetClass "{596EA9A1FD352F81}" {
+         Name "Button_Close"
+         Slot LayoutSlot "{596EA9A1FD352E54}" {
+          VerticalAlign 1
+          Padding 50 0 20 0
+         }
+         components {
+          ButtonActionComponent "{596F7A52C1765F3D}" {
+          }
+         }
+         {
+          RichTextWidgetClass "{596EA9A1CFA147B4}" {
+           Name "ButtonText_Close"
+           Slot ButtonWidgetSlot "{596EA9A1CFA14641}" {
+           }
+           Color 0.502 0 0 1
+           Text "Close"
+           "Font Size" 40
+           "Horizontal Alignment" Center
+           "Vertical Alignment" Center
+          }
+         }
+        }
+       }
+      }
+     }
+    }
+   }
+  }
+ }
+}

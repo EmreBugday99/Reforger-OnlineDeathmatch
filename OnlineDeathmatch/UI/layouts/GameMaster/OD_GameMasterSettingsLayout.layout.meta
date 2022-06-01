@@ -1,0 +1,15 @@
+MetaFileClass {
+ Name "{2E4855DD6E2730DC}UI/layouts/Economy/OD_GameMasterSettingsLayout.layout"
+ Configurations {
+  LayoutResourceClass PC {
+  }
+  LayoutResourceClass XBOX_ONE : PC {
+  }
+  LayoutResourceClass XBOX_SERIES : PC {
+  }
+  LayoutResourceClass PS4 : PC {
+  }
+  LayoutResourceClass HEADLESS : PC {
+  }
+ }
+}

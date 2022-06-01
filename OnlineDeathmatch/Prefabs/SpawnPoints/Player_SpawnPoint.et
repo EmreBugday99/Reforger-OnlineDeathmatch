@@ -1,6 +1,20 @@
 SCR_SpawnPoint {
  ID "596CDA37D14EA195"
  components {
+  SCR_EditableEntityComponent "{597F6C753B1D2A68}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{597F6C7500BF8012}" {
+    Name "Player Spawn Point"
+    Description "One of the spawn points that is utilized for spawning new players"
+    Icon "{D5196E7DCCA96B09}Icons/OD_icon_ReviveGreen.edds"
+    m_Image "{D5196E7DCCA96B09}Icons/OD_icon_ReviveGreen.edds"
+    m_sFaction "PF"
+    m_aAutoLabels {
+     7 121
+    }
+   }
+   m_bAutoRegister ALWAYS
+   m_bStatic 1
+  }
   RplComponent "{596CD577BA0C91ED}" {
   }
  }

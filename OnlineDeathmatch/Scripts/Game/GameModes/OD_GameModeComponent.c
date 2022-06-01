@@ -26,11 +26,11 @@ class OD_GameModeComponent : SCR_BaseGameModeComponent
 		if (!replication || replication.IsProxy())
 			return;
 
-		if (!killer)
+		if (killer)
 		{
 			OD_EconomyComponent economy = OD_EconomyComponent.Cast(killer.FindComponent(OD_EconomyComponent));
-			if (!economy)
-				economy.ChangeMoney(40);
+			if (economy)
+				economy.ChangeMoney(20);
 		}
 
 		replication.DeleteRplEntity(player, false);
@@ -54,7 +54,7 @@ class OD_GameModeComponent : SCR_BaseGameModeComponent
 		Faction playerFaction = GetGame().GetFactionManager().GetFactionByKey(playerFactionKey);
 		if (!playerFaction)
 			return;
-		
+
 		SCR_SpawnPoint spawnPoint = SCR_SpawnPoint.GetRandomSpawnPointForFaction(playerFactionKey);
 		if (!spawnPoint)
 			return;

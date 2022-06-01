@@ -4,7 +4,22 @@ SCR_SpawnPoint {
   OD_EnemySpawner "{596CDA3731C49989}" {
    enemyFactionKey "EF"
    enemyRespawnMilliseconds 5000
-   enemyCount 3
+   enemyCount 1
+  }
+  SCR_EditableEntityComponent "{597F46508723ACCF}" {
+   m_UIInfo SCR_EditableEntityUIInfo "{597F65AF782F733D}" {
+    Name "Enemy Spawn Point"
+    Description "This spawn point is designated for spawning enemies (AI)"
+    Icon "{26B9275927B4FE9F}Icons/OD_icon_ReviveRed.edds"
+    m_Image "{26B9275927B4FE9F}Icons/OD_icon_ReviveRed.edds"
+    m_aAuthoredLabels {
+    }
+    m_aAutoLabels {
+     7 121
+    }
+   }
+   m_bAutoRegister ALWAYS
+   m_bStatic 1
   }
   RplComponent "{596CD577BA0C91ED}" {
   }

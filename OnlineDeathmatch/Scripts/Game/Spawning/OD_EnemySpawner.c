@@ -27,7 +27,19 @@ class OD_EnemySpawner : ScriptComponent
 
 		GetGame().GetCallqueue().CallLater(SpawnEnemiesOnStart, enemyRespawnMilliseconds, false);
 
-		super.EOnInit(owner);
+		SCR_SpawnPoint spawnPoint = SCR_SpawnPoint.Cast(owner);
+		// How is this even possible?
+		if (!spawnPoint)
+			return;
+		
+		
+		// Not needed anymore.
+		#ifdef NO_LONGER_COMPILED
+		// Players who aren't GameMasters shouldn't see the spawn points in game.		
+		SCR_EditorManagerEntity editorManager = SCR_EditorManagerEntity.GetInstance();
+		if (!editorManager && editorManager.IsLimited())
+			spawnPoint.Show(false);
+		#endif
 	}
 	
 	void SpawnEnemiesOnStart()

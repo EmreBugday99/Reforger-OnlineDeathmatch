@@ -12,8 +12,13 @@ class OD_EconomyUIComponent : ScriptComponent
 	string MoneyTextId;
 	[Attribute("", uiwidget: UIWidgets.EditBox, "Heal price text id in the economy layout", category: "OnlineDeatmatch")]
 	string HealPriceTextId;
+	[Attribute("", uiwidget: UIWidgets.EditBox, "Weapon Pack price text id in the economy layout", category: "OnlineDeatmatch")]
+	string WeaponPackPriceTextId;
+	
 	[Attribute("", uiwidget: UIWidgets.EditBox, "Heal button id in the shop layout", category: "OnlineDeatmatch")]
 	string HealButtonId;
+	[Attribute("", uiwidget: UIWidgets.EditBox, "Weapon Pack button id in the shop layout", category: "OnlineDeatmatch")]
+	string WeaponPackButtonId;
 	[Attribute("", uiwidget: UIWidgets.EditBox, "Close button id in the shop layout", category: "OnlineDeatmatch")]
 	string ShopButtonId;
 
@@ -26,7 +31,7 @@ class OD_EconomyUIComponent : ScriptComponent
 		OD_EconomyComponent economy = OD_EconomyComponent.Cast(GetOwner().FindComponent(OD_EconomyComponent));
 		if (!EconomyWidget || !economy)
 			return;
-
+		
 		RichTextWidget moneyText = RichTextWidget.Cast(EconomyWidget.FindAnyWidget(MoneyTextId));
 		moneyText.SetText("Money: " + economy.Money + "$");
 	}
@@ -48,14 +53,25 @@ class OD_EconomyUIComponent : ScriptComponent
 			if (healItem)
 				healPrice.SetText(healItem.Value.ToString() + "$");
 		}
+		RichTextWidget weaponPackPrice = RichTextWidget.Cast(ShopWidget.FindAnyWidget(WeaponPackPriceTextId));
+		if (weaponPackPrice)
+		{
+			OD_Item weaponItem = economy.GetItem("weapon_pack");
+			if (weaponItem)
+				weaponPackPrice.SetText(weaponItem.Value.ToString() + "$");
+		}
 
 		ButtonWidget healButton = ButtonWidget.Cast(ShopWidget.FindAnyWidget(HealButtonId));
 		if (healButton)
 			ButtonActionComponent.GetOnAction(healButton).Insert(OnHealButton);
 
-		ButtonWidget shopButton = ButtonWidget.Cast(ShopWidget.FindAnyWidget(ShopButtonId));
-		if (shopButton)
-			ButtonActionComponent.GetOnAction(shopButton).Insert(OnShopCloseButton);
+		ButtonWidget weaponPackButton = ButtonWidget.Cast(ShopWidget.FindAnyWidget(WeaponPackButtonId));
+		if (weaponPackButton)
+			ButtonActionComponent.GetOnAction(weaponPackButton).Insert(OnWeaponPackButton);
+
+		ButtonWidget shopCloseButton = ButtonWidget.Cast(ShopWidget.FindAnyWidget(ShopButtonId));
+		if (shopCloseButton)
+			ButtonActionComponent.GetOnAction(shopCloseButton).Insert(OnShopCloseButton);
 	}
 
 	private void OnHealButton(Widget widget, float value, EActionTrigger actionTrigger)
@@ -68,6 +84,18 @@ class OD_EconomyUIComponent : ScriptComponent
 			return;
 
 		economy.TryPurchase("heal");
+	}
+	
+	private void OnWeaponPackButton(Widget widget, float value, EActionTrigger actionTrigger)
+	{
+		if (actionTrigger != EActionTrigger.DOWN)
+			return;
+
+		OD_EconomyComponent economy = OD_EconomyComponent.Cast(GetOwner().FindComponent(OD_EconomyComponent));
+		if (!economy)
+			return;
+
+		economy.TryPurchase("weapon_pack");
 	}
 	
 	void UpdateMoneyText(int newMoney)

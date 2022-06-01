@@ -5,6 +5,8 @@ class OD_EconomyComponent : ScriptComponent
 {
 	[RplProp(onRplName: "OnMoneyChanged")]
 	int Money = 0;
+	
+	protected int protectedInteger = 599;
 
 	private ref map<string, ref OD_Item> Purchasables = new map<string, ref OD_Item>();
 
@@ -38,6 +40,9 @@ class OD_EconomyComponent : ScriptComponent
 	{
 		OD_ItemHeal heal = new OD_ItemHeal();
 		Purchasables.Set(heal.Identifier, heal);
+
+		OD_ItemWeaponPack weaponPack = new OD_ItemWeaponPack();
+		Purchasables.Set(weaponPack.Identifier, weaponPack);
 	}
 
 	OD_Item GetItem(string itemIdentifier)
@@ -50,10 +55,27 @@ class OD_EconomyComponent : ScriptComponent
 		OD_EconomyUIComponent economyUI = OD_EconomyUIComponent.Cast(GetOwner().FindComponent(OD_EconomyUIComponent));
 		if (!economyUI)
 			return;
-		
+
 		economyUI.UpdateMoneyText(Money);
 	}
 
+	// GameMasters can bypass the regular authority requirement for changing money of a Player
+	void GMChangeMoney(int changeAmount)
+	{
+		SCR_EditorManagerEntity editorManager = SCR_EditorManagerEntity.GetInstance();
+		RplComponent replication = RplComponent.Cast(GetOwner().FindComponent(RplComponent));
+
+		if (!replication.IsProxy()) // If we already have authorithy no need to call any RPC
+			ChangeMoney(changeAmount);
+		else if (editorManager && !editorManager.IsLimited()) // If we have GM priviliges we tell the authority to change money
+			Rpc(ServerChangeMoney, changeAmount);		
+		else // Unauthorized request
+		{}
+	}
+
+	[RplRpc(RplChannel.Reliable, RplRcver.Server)]
+	private void ServerChangeMoney(int changeAmount) { ChangeMoney(changeAmount); }
+	
 	void ChangeMoney(int changeAmount)
 	{
 		RplComponent replication = RplComponent.Cast(GetOwner().FindComponent(RplComponent));

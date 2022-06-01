@@ -259,11 +259,13 @@ SCR_ChimeraCharacter {
   OD_EconomyComponent "{5973369A66ADFB60}" {
   }
   OD_EconomyUIComponent "{5973369A7A82D2D6}" {
-   EconomyLayout "{999F492B9A7542C8}UI/layouts/OD_EconomyLayout.layout"
-   ShopLayout "{C169C9A9ECFB7491}UI/layouts/OD_ShopLayout.layout"
+   EconomyLayout "{999F492B9A7542C8}UI/layouts/Economy/OD_EconomyLayout.layout"
+   ShopLayout "{C169C9A9ECFB7491}UI/layouts/Economy/OD_ShopLayout.layout"
    MoneyTextId "Text_Money"
    HealPriceTextId "Text_Price_Heal"
+   WeaponPackPriceTextId "Text_Price_WeaponPack"
    HealButtonId "Button_Heal"
+   WeaponPackButtonId "Button_WeaponPack"
    ShopButtonId "Button_Close"
   }
   Ragdoll "{5973369A6A616740}" {

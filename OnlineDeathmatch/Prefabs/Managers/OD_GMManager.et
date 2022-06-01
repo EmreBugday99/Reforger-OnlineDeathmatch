@@ -1,0 +1,14 @@
+OD_GameMasterEntity {
+ ID "5983061C8916AA93"
+ components {
+  OD_GMSettingsUIComponent "{5983061CD5DE22C9}" {
+   GameMasterSettingsLayout "{2E4855DD6E2730DC}UI/layouts/GameMaster/OD_GameMasterSettingsLayout.layout"
+   GiveMoneyAmountTextId "Text_GiveMoneyAmount"
+   GiveMoneyIncrementButtonId "Horizontal_GiveMoneyButtons"
+   GiveMoneyDecrementButtonId "Button_GiveMoneyDecrease"
+   SettingsCloseButtonId "Button_Close"
+  }
+  RplComponent "{5983061C97A13168}" {
+  }
+ }
+}

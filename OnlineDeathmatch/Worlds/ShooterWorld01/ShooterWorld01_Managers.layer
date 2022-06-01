@@ -167,6 +167,8 @@ FactionManager FactionManager : "{F8931B0B71A27471}Prefabs/Managers/OD_FactionMa
   }
  }
 }
+OD_GameMasterEntity GMManager : "{760ED00391C8493C}Prefabs/Managers/OD_GMManager.et" {
+}
 SCR_LoadoutManager LoadoutManager : "{B360CDACD8603BE5}Prefabs/Managers/OD_LoadoutManager.et" {
  m_aPlayerLoadouts {
   SCR_FactionPlayerLoadout "{596CC4C88DB53CA3}" {

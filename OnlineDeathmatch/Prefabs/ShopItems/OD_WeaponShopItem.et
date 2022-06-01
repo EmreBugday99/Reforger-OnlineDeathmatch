@@ -1,0 +1,143 @@
+GenericEntity {
+ ID "597F6C74A51F2965"
+ components {
+  MeshObject "{597F65AE87F52F39}" {
+   Object "{9E1DFF036BCE913E}Assets/Props/Military/AmmoBox/EquipmentBoxWooden_01/EquipmentBoxWooden_Ammunition_01.xob"
+  }
+  RigidBody "{597F65AE87F52E51}" {
+   Active Active
+   Mass 10
+   ResponseIndex "TinyDestructible"
+   ModelGeometry 1
+  }
+  SCR_ArsenalComponent "{597F65AE87F52E16}" {
+   m_eSupportedArsenalItemTypes 294
+   m_eSupportedArsenalItemModes AMMUNITION
+   m_eEditableAttributeGroups 30
+  }
+  SCR_DestructionMultiPhaseComponent "{597F65AE87F52D43}" {
+   Enabled 0
+   "Additional hit zones" {
+    ScriptedHitZone Default {
+     HZDefault 1
+     "Melee multiplier" 1
+     "Kinetic multiplier" 1
+     "Explosive multiplier" 90
+     "Incendiary multiplier" 1
+    }
+   }
+   m_fBaseHealth 500
+   m_fForceToDamageScale 350
+   m_fDamageThresholdMinimum 60
+   m_fDamageThresholdMaximum 40000
+   m_DestroySpawnObjects {
+    SCR_DebrisSpawnable "{597F65AE87F52E9F}" {
+     m_vOffsetPosition 0 0.3 0
+     m_ModelPrefabs {
+      "{AE6DE9DEA19D68B7}Assets/Props/Debris/Metal/FragmentMetal_dbr_03.xob" "{D9678156553F87C7}Assets/Props/Debris/Metal/FragmentMetal_dbr_02.xob" "{D9678156553F87C7}Assets/Props/Debris/Metal/FragmentMetal_dbr_02.xob" "{AE6DE9DEA19D68B7}Assets/Props/Debris/Metal/FragmentMetal_dbr_03.xob" "{0A04F02D30BA8459}Assets/Props/Debris/Metal/FragmentMechanical_dbr_03.xob" "{0A04F02D30BA8459}Assets/Props/Debris/Metal/FragmentMechanical_dbr_03.xob"
+     }
+     m_fMass 1
+     m_eMaterialSoundType METAL_LIGHT
+    }
+    SCR_ParticleSpawnable "{597F65AE87F52E8B}" {
+     m_Particle "{C436A8D33CE1AA4E}Particles/Props/Dest_Prop_Wood_Small.ptc"
+    }
+   }
+  }
+  SCR_EditableSystemComponent "{597F65AE87F52DCB}" {
+   m_EntityType SYSTEM
+   m_UIInfo SCR_EditableEntityUIInfo "{597F65AE87F52D30}" {
+    Name "#AR-EditableEntity_AmmoBoxArsenal_Ammunition_US_Name"
+    Icon "{824477FA49F8A432}UI/Textures/Editor/EditableEntities/Systems/EditableEntity_System_Arsenal_Ammo.edds"
+    m_Image "{81FDDBCEFDD669D2}UI/Textures/EditorPreviews/Auto/Systems/Arsenal/AmmoBoxes/US/E_AmmoBoxArsenal_Ammunition_US.edds"
+    m_sFaction "US"
+    m_aAuthoredLabels {
+     38 34
+    }
+    m_aAutoLabels {
+     11 7 121 27
+    }
+    m_EntityBudgetCost {
+     SCR_EntityBudgetValue "{597F65AE87F52D0A}" {
+      m_BudgetType SYSTEMS
+      m_Value 4
+     }
+    }
+   }
+   m_bAutoRegister ALWAYS
+   m_Flags 773
+  }
+  SCR_FactionControlComponent "{597F65AE87F52DF9}" {
+   m_DefaultFaction "US"
+  }
+  SCR_UniversalInventoryStorageComponent "{597F65AE87F52C47}" {
+   Enabled 0
+   Attributes SCR_ItemAttributeCollection "{597F65AE87F52DAC}" {
+    ItemDisplayName UIInfo "{597F65AE87F52DA8}" {
+     Name "#AR-Ammobox_Name"
+     Description "#AR-Ammobox_Name"
+    }
+   }
+   Priority 1000
+   UseCapacityCoefficient 0
+   MaxCumulativeVolume 10000
+   m_fMaxWeight 10000
+  }
+  UniversalInventoryStorageComponent "{597F65AE87F52C10}" {
+   Attributes SCR_ItemAttributeCollection "{597F65AE87F52C6C}" {
+    ItemDisplayName UIInfo "{597F65AE87F52C6E}" {
+     Name "#AR-Ammobox_Name"
+     Description "#AR-Ammobox_Name"
+    }
+   }
+   Priority 1000
+   InitialStorageSlots {
+    SCR_EquipmentStorageSlot SVD {
+     Offset 0 1 0
+     Prefab "{6415B7923DE28C1B}Prefabs/Weapons/Rifles/SVD/Rifle_SVD_PSO.et"
+     Name "SVD"
+    }
+    SCR_EquipmentStorageSlot M14 {
+     Offset 0 0.8 0
+     Prefab "{81EB948E6414BD6F}Prefabs/Weapons/Rifles/M14/Rifle_M21_ARTII.et"
+    }
+    SCR_EquipmentStorageSlot M14_Ammo {
+     Prefab "{627255315038152A}Prefabs/Weapons/Magazines/Magazine_762x51_M14_20rnd_SpecialBall.et"
+    }
+    SCR_EquipmentStorageSlot SVD_Ammo {
+     Prefab "{9CCB46C6EE632C1A}Prefabs/Weapons/Magazines/Magazine_762x54_SVD_10rnd_Sniper.et"
+    }
+    SCR_EquipmentStorageSlot M16_Ammo {
+     Prefab "{D8F2CA92583B23D3}Prefabs/Weapons/Magazines/Magazine_556x45_STANAG_30rnd_Last_5Tracer.et"
+    }
+   }
+  }
+  SCR_ArsenalInventoryStorageManagerComponent "{597F65AE87F52C1D}" {
+  }
+  ActionsManagerComponent "{597F65AE87F52CB6}" {
+   ActionContexts {
+    UserActionContext "{597F65AE87F52CD1}" {
+     ContextName "default"
+     Position PointInfo "{597F65AE87F52C2C}" {
+     }
+     Radius 0.5
+    }
+   }
+   additionalActions {
+    SCR_OpenStorageAction "{597F65AE87F52C88}" {
+     ParentContextList {
+      "default"
+     }
+     UIInfo UIInfo "{597F65AE87F52CCE}" {
+      Name "#AR-Inventory_OpenStorage"
+     }
+     "Sort Priority" 100
+    }
+   }
+  }
+  RplComponent "{597F65AE87F52CA3}" {
+  }
+ }
+ coords 262.453 14.69 242.28
+ Flags 1027
+}

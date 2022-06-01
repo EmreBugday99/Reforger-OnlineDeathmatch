@@ -3,7 +3,7 @@ class OD_ItemHeal : OD_Item
 	void OD_ItemHeal()
 	{
 		Identifier = "heal";
-		Value = 50;
+		Value = 20;
 	}
 
 	override void OnTryPurchase(IEntity buyer)
